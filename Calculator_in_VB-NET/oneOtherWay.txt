@@ -1,0 +1,180 @@
+Public Class mathCheat
+
+    Dim dcFirstNum As Decimal
+    Dim dcsecondtNum As Decimal
+    Dim iOperations As Integer
+    Dim blOperator_selector As Boolean = False
+
+    Private Sub btnOne_Click(sender As Object, e As EventArgs) Handles btnOne.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "1"
+        Else
+            txtScreen.Text = 1
+        End If
+
+    End Sub
+
+    Private Sub btnTwo_Click(sender As Object, e As EventArgs) Handles btnTwo.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "2"
+        Else
+            txtScreen.Text = 2
+        End If
+
+    End Sub
+
+    Private Sub btnThree_Click(sender As Object, e As EventArgs) Handles btnThree.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "3"
+        Else
+            txtScreen.Text = 3
+        End If
+
+    End Sub
+
+    Private Sub btnFour_Click(sender As Object, e As EventArgs) Handles btnFour.Click
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "4"
+        Else
+            txtScreen.Text = 4
+        End If
+
+    End Sub
+
+    Private Sub btnFive_Click(sender As Object, e As EventArgs) Handles btnFive.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "5"
+        Else
+            txtScreen.Text = 5
+        End If
+
+    End Sub
+
+    Private Sub btnSix_Click(sender As Object, e As EventArgs) Handles btnSix.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "6"
+        Else
+            txtScreen.Text = 6
+        End If
+
+    End Sub
+
+    Private Sub btnSeven_Click(sender As Object, e As EventArgs) Handles btnSeven.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "7"
+        Else
+            txtScreen.Text = 7
+        End If
+
+    End Sub
+
+    Private Sub btnEight_Click(sender As Object, e As EventArgs) Handles btnEight.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "8"
+        Else
+            txtScreen.Text = 8
+        End If
+
+    End Sub
+
+    Private Sub btnNine_Click(sender As Object, e As EventArgs) Handles btnNine.Click
+
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "9"
+        Else
+            txtScreen.Text = 9
+        End If
+
+    End Sub
+
+    Private Sub btnZero_Click(sender As Object, e As EventArgs) Handles btnZero.Click
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text += "0"
+        End If
+
+    End Sub
+
+    Private Sub btnPoint_Click(sender As Object, e As EventArgs) Handles btnPoint.Click
+        If Not (txtScreen.Text.Contains(".")) Then
+            txtScreen.Text += "."
+        End If
+    End Sub
+
+    Private Sub btnAC_Click(sender As Object, e As EventArgs) Handles btnAC.Click
+        If txtScreen.Text <> "0" Then
+            txtScreen.Text = "0"
+        End If
+
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        dcFirstNum = txtScreen.Text
+        txtScreen.Text = "0"
+        blOperator_selector = True
+        iOperations = 1 '= +
+
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        dcFirstNum = txtScreen.Text
+        txtScreen.Text = "0"
+        blOperator_selector = True
+        iOperations = 2 '= -
+
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        dcFirstNum = txtScreen.Text
+        txtScreen.Text = "0"
+        blOperator_selector = True
+        iOperations = 3 '= *
+
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+
+        dcFirstNum = txtScreen.Text
+        txtScreen.Text = "0"
+        blOperator_selector = True
+        iOperations = 4 '= /
+
+    End Sub
+
+    Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
+        If blOperator_selector = True Then
+            dcsecondtNum = txtScreen.Text
+
+            If iOperations = 1 Then
+                txtScreen.Text = dcFirstNum + dcsecondtNum
+
+            ElseIf iOperations = 2 Then
+                txtScreen.Text = dcFirstNum - dcsecondtNum
+
+            ElseIf iOperations = 3 Then
+                txtScreen.Text = dcFirstNum * dcsecondtNum
+            Else
+                If dcsecondtNum = 0 Then
+                    txtScreen.Text = "Error!"
+                Else
+                    txtScreen.Text = dcFirstNum / dcsecondtNum
+                End If
+            End If
+
+            blOperator_selector = False
+        End If
+
+    End Sub
+
+    Private Sub mathCheat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class

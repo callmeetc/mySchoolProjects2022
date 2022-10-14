@@ -1,0 +1,11 @@
+D:\eTc\A VB,NET\mathCheat\bin\Debug\mathCheat.exe.config
+D:\eTc\A VB,NET\mathCheat\bin\Debug\mathCheat.exe
+D:\eTc\A VB,NET\mathCheat\bin\Debug\mathCheat.pdb
+D:\eTc\A VB,NET\mathCheat\bin\Debug\mathCheat.xml
+D:\eTc\A VB,NET\mathCheat\obj\Debug\mathCheat.vbprojResolveAssemblyReference.cache
+D:\eTc\A VB,NET\mathCheat\obj\Debug\mathCheat.Katrina.resources
+D:\eTc\A VB,NET\mathCheat\obj\Debug\mathCheat.Resources.resources
+D:\eTc\A VB,NET\mathCheat\obj\Debug\mathCheat.vbproj.GenerateResource.Cache
+D:\eTc\A VB,NET\mathCheat\obj\Debug\mathCheat.exe
+D:\eTc\A VB,NET\mathCheat\obj\Debug\mathCheat.xml
+D:\eTc\A VB,NET\mathCheat\obj\Debug\mathCheat.pdb
