@@ -123,7 +123,7 @@ Public Class mathCheat
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+   Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
 
         dcFirstNum = txtScreen.Text
         txtScreen.Text = "0"
@@ -132,7 +132,7 @@ Public Class mathCheat
 
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub btnMultiplication_Click(sender As Object, e As EventArgs) Handles btnMultiplication.Click
         dcFirstNum = txtScreen.Text
         txtScreen.Text = "0"
         blOperator_selector = True
@@ -140,7 +140,7 @@ Public Class mathCheat
 
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+    Private Sub btnDivide_Click(sender As Object, e As EventArgs) Handles btnDivide.Click
 
         dcFirstNum = txtScreen.Text
         txtScreen.Text = "0"
