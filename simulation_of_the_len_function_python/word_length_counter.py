@@ -8,6 +8,7 @@ def wordCount(string):
     return count
 
 print("\n\n\t\t\tReturns the number of letters in a word or sentence.")
+print('TYPE "end" TO END PROCESS')
 while True:
     test = input("\n\nEnter a word: ")
     if test == "end":
